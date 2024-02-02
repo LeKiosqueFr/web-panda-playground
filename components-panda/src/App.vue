@@ -4,21 +4,18 @@ import Button from './components/Button.vue';
 </script>
 
 <template>
-  <h1 :class="css({ textStyle: 'hero' })">Components-panda</h1>
-  <div>
-    <Button visual="primary" size="md">Button label</Button>
-  </div>
-  <div
+  <h1
     :class="
-      css({
-        fontSize: '5xl',
-        fontWeight: 'bold',
-        color: 'primary',
-        fontFamily: 'soleilSemiBold',
-      })
+      css({ textStyle: 'hero', color: 'primary', fontFamily: 'soleilSemiBold' })
     "
   >
-    Hello 🐼!
+    Components-panda
+  </h1>
+  <div :class="css({ display: 'flex', flexDir: 'column' })">
+    <Button visual="primary" size="md" label="primary" />
+    <Button visual="secondary" size="xl" label="secondary" />
+    <Button visual="outlinePrimary" size="xl" label="outlinePrimary" />
+    <Button visual="text" size="xl" label="text" />
   </div>
 </template>
 

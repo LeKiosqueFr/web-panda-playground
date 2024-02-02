@@ -3,8 +3,8 @@ import { webPandaPreset } from 'components-panda';
 export default defineConfig({
   presets: ['@pandacss/dev/presets', webPandaPreset],
   conditions: {
-    blue: '[data-theme=blue] & ',
-    rose: '[data-theme=rose] &',
+    cafeyn: '[data-theme=cafeyn] & ',
+    blendle: '[data-theme=blendle] &',
   },
   // Whether to use css reset
   preflight: true,
@@ -15,7 +15,9 @@ export default defineConfig({
     './pages/**/*.{js,jsx,ts,tsx,vue}',
     './src/stories/**/*.{js,jsx,ts,tsx,vue}',
   ],
-
+  staticCss: {
+    recipes: { button: ['*'] },
+  },
   // Files to exclude
   exclude: [],
 

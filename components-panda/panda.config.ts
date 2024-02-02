@@ -4,8 +4,8 @@ import { defineConfig } from '@pandacss/dev';
 export default defineConfig({
   presets: ['@pandacss/dev/presets', webPandaPreset],
   conditions: {
-    blue: '[data-theme=blue] & ',
-    rose: '[data-theme=rose] &',
+    cafeyn: '[data-theme=cafeyn] & ',
+    blendle: '[data-theme=blendle] &',
   },
   // Whether to use css reset
   preflight: true,

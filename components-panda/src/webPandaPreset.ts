@@ -223,40 +223,40 @@ const extendTheme = {
     fonts: {
       primary: {
         value: {
-          _blue: {
+          _cafeyn: {
             value: 'var(--font-soleil-regular)',
           },
-          _rose: {
+          _blendle: {
             value: 'var(--font-gt-walsheim-bold)',
           },
         },
       },
       secondary: {
         value: {
-          _blue: {
+          _cafeyn: {
             value: 'var(--font-lyon-black)',
           },
-          _rose: {
+          _blendle: {
             value: 'var(--font-lyon-black)',
           },
         },
       },
       soleilSemiBold: {
         value: {
-          _blue: {
+          _cafeyn: {
             value: 'var(--font-soleil-semiBold)',
           },
-          _rose: {
+          _blendle: {
             value: 'var(--font-soleil-semiBold)',
           },
         },
       },
       soleilBold: {
         value: {
-          _blue: {
+          _cafeyn: {
             value: 'var(--font-soleil-bold)',
           },
-          _rose: {
+          _blendle: {
             value: 'var(--font-soleil-bold)',
           },
         },
@@ -265,8 +265,8 @@ const extendTheme = {
     colors: {
       primary: {
         value: {
-          _blue: { _osLight: '#1d73a5', _osDark: '#1d73a5' },
-          _rose: {
+          _cafeyn: { _osLight: '#1d73a5', _osDark: '#1d73a5' },
+          _blendle: {
             _osLight: '#000000',
             _osDark: '#000000',
           },
@@ -274,11 +274,11 @@ const extendTheme = {
       },
       secondary: {
         value: {
-          _blue: {
+          _cafeyn: {
             _osLight: '#fedc84',
             _osDark: '#000000',
           },
-          _rose: {
+          _blendle: {
             _osLight: '#ff1060',
             _osDark: '#000000',
           },

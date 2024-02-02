@@ -15,7 +15,7 @@ const meta = {
     },
     label: { control: 'text' },
   },
-  args: { visual: 'primary', label: 'button' }, // default value
+  args: { visual: 'primary', size: 'sm', label: 'button' }, // default value
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -29,6 +29,7 @@ export const Primary: Story = {
   args: {
     visual: 'primary',
     label: 'Button',
+    size: 'sm',
   },
 };
 
@@ -36,6 +37,7 @@ export const Secondary: Story = {
   args: {
     visual: 'secondary',
     label: 'Button',
+    size: 'sm',
   },
 };
 

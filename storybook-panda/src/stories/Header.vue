@@ -30,46 +30,17 @@
           >Welcome, <b>{{ user.name }}</b
           >!</span
         >
-        <div
-          :class="
-            css({
-              fontSize: '5xl',
-              fontWeight: 'bold',
-              color: 'primary',
-              fontFamily: 'soleilSemiBold',
-            })
-          "
-        >
-          Hello 🐼!
+        <div>
+          <Button visual="primary" size="md">Button label</Button>
         </div>
-        <my-button
-          size="small"
-          @click="$emit('logout')"
-          label="Log out"
-          v-if="user"
-        />
-        <my-button
-          size="small"
-          @click="$emit('login')"
-          label="Log in"
-          v-if="!user"
-        />
-        <my-button
-          primary
-          size="small"
-          @click="$emit('createAccount')"
-          label="Sign up"
-          v-if="!user"
-        />
       </div>
     </div>
   </header>
 </template>
 
 <script lang="ts" setup>
-import { css } from '../../styled-system/css';
 import './header.css';
-import MyButton from './Button.vue';
+import { Button } from 'components-panda';
 
 defineProps<{ user: { name: string } | null }>();
 

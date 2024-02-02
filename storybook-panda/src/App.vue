@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
 import { css } from '../styled-system/css';
 import { Button } from 'components-panda';
 </script>
@@ -7,7 +6,10 @@ import { Button } from 'components-panda';
 <template>
   <h1 :class="css({ textStyle: 'hero' })">Web panda</h1>
   <div>
-    <Button visual="primary" size="md">Button label</Button>
+    <Button visual="primary" size="md" label="primary" />
+    <Button visual="secondary" size="xl" label="secondary" />
+    <Button visual="outlinePrimary" size="xl" label="outlinePrimary" />
+    <Button visual="text" size="xl" label="text" />
   </div>
   <div
     :class="

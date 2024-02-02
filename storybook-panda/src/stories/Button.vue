@@ -1,5 +1,7 @@
 <template>
-  <Button size="lg" visual="primary" :label="'totottotot'" />
+  <Button size="lg" visual="primary">
+    {{ label }}
+  </Button>
 </template>
 
 <script lang="ts" setup>
@@ -15,17 +17,13 @@ const props = withDefaults(
     /**
      * primary or secondary button
      */
-    primary?: boolean;
+    visual?: 'primary' | 'secondary' | 'outlined';
     /**
      * size of the button
      */
-    size?: 'small' | 'medium' | 'large';
-    /**
-     * background color of the button
-     */
-    backgroundColor?: string;
+    size?: 'sm' | 'md' | 'lg';
   }>(),
-  { primary: false },
+  { visual: 'outlined' },
 );
 
 const emit = defineEmits<{

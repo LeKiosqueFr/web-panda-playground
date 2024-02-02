@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { cx } from '../../styled-system/css';
+
 /*
 import { cva } from '../../styled-system/css';
 
@@ -61,11 +63,15 @@ import { button, type ButtonVariantProps } from 'styled-system/recipes';
 
 interface ButtonProps extends /** @vue-ignore */ ButtonVariantProps {}
 
-defineProps<ButtonProps>();
+defineProps<{
+  label: string;
+  visual: ButtonProps['visual'];
+  size: ButtonProps['size'];
+}>();
 </script>
 
 <template>
-  <button type="button" :class="button({ visual: visual, size: size })">
-    <slot />
+  <button type="button" :class="cx(button({ visual: visual, size: size }))">
+    {{ label }}
   </button>
 </template>
