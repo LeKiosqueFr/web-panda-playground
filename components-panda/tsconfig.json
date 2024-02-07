@@ -23,6 +23,7 @@
   },
   "exclude": ["src/App.vue", "src/main.ts"],
   "include": [
+    "config/*",
     "src/assets/fonts/*",
     "src/**/*.ts",
     "src/**/*.d.ts",

@@ -1,22 +1,28 @@
 <script setup lang="ts">
 import { css } from '../styled-system/css';
 import Button from './components/Button.vue';
+import Concept from './components/Concept.vue';
 </script>
 
 <template>
   <h1
     :class="
-      css({ textStyle: 'hero', color: 'primary', fontFamily: 'soleilSemiBold' })
+      css({
+        textStyle: 'hero',
+        color: 'concepts.news',
+        fontFamily: 'soleilSemiBold',
+      })
     "
   >
     Components-panda
   </h1>
   <div :class="css({ display: 'flex', flexDir: 'column' })">
     <Button visual="primary" size="md" label="primary" />
-    <Button visual="secondary" size="xl" label="secondary" />
+    <Button visual="secondary" size="sm" label="secondary" />
     <Button visual="outlinePrimary" size="xl" label="outlinePrimary" />
-    <Button visual="text" size="xl" label="text" />
+    <Button visual="link" size="xl" label="text" />
   </div>
+  <div :class="css({ display: 'flex', flexDir: 'row' })"></div>
 </template>
 
 <style scoped>

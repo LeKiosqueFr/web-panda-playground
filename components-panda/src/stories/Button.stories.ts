@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-import { Button } from 'components-panda';
+import Button from '../components/Button.vue';
 // More on how to se©t up stories at: https://storybook.js.org/docs/writing-stories
 const meta = {
   title: 'Example/Button',
@@ -10,7 +10,13 @@ const meta = {
     size: { control: 'select', options: ['sm', 'md', 'lg', 'xl'] },
     visual: {
       control: 'select',
-      options: ['primary', 'secondary', 'outlinePrimary', 'text'],
+      options: [
+        'primary',
+        'secondary',
+        'outlinePrimary',
+        'outlineSecondary',
+        'link',
+      ],
     },
     label: { control: 'text' },
   },
@@ -53,9 +59,9 @@ export const OutlineSecondary: Story = {
     size: 'lg',
   },
 };
-export const Text: Story = {
+export const Link: Story = {
   args: {
-    visual: 'Text',
+    visual: 'link',
     label: 'Button',
     size: 'sm',
   },

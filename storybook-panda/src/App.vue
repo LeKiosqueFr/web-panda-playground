@@ -5,6 +5,10 @@ import { Button } from 'components-panda';
 
 <template>
   <h1 :class="css({ textStyle: 'hero' })">Web panda</h1>
+  <h1 :class="css({ textStyle: 'hero', color: 'concepts.arts' })">Web panda</h1>
+  <h1 :class="css({ textStyle: 'hero', color: 'system.success' })">
+    Web panda
+  </h1>
   <div>
     <Button visual="primary" size="md" label="primary" />
     <Button visual="secondary" size="xl" label="secondary" />
@@ -16,7 +20,7 @@ import { Button } from 'components-panda';
       css({
         fontSize: '5xl',
         fontWeight: 'bold',
-        color: 'primary',
+        color: 'brands.primary',
         fontFamily: 'soleilSemiBold',
       })
     "

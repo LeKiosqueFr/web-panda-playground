@@ -1,7 +1,7 @@
 import { webPandaPreset } from './src/webPandaPreset';
-import { defineConfig } from '@pandacss/dev';
+import { Config, defineConfig } from '@pandacss/dev';
 
-export default defineConfig({
+export const config: Config = {
   presets: ['@pandacss/dev/presets', webPandaPreset],
   conditions: {
     cafeyn: '[data-theme=cafeyn] & ',
@@ -14,11 +14,14 @@ export default defineConfig({
   include: [
     './src/**/*.{js,jsx,ts,tsx,vue}',
     './pages/**/*.{js,jsx,ts,tsx,vue}',
+    './src/stories/**/*.{js,jsx,ts,tsx,vue}',
   ],
 
   // Files to exclude
   exclude: [],
-
+  staticCss: {
+    recipes: { button: ['*'] },
+  },
   // Useful for theme customization
   theme: {
     extend: {},
@@ -27,4 +30,5 @@ export default defineConfig({
   // The output directory for your css system
   outdir: 'styled-system',
   emitPackage: true,
-});
+};
+export default defineConfig(config);
